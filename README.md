@@ -35,6 +35,7 @@ const bucket = AWS_S3_BUCKET;
 const s3 = new aws.S3();
 
 const fileKeys = [
+    // Add your file keys here as an array. Example as follows.
     'test/file1.jpg',
     'folder1/subfolder1/testpdf.pdf'
 ]
@@ -56,6 +57,12 @@ aws.config.update({
 
 const bucket = AWS_S3_BUCKET;
 const s3 = new aws.S3();
+
+const fileKeys = [
+    // Add your file keys here as an array. Example as follows.
+    'test/file1.jpg',
+    'folder1/subfolder1/testpdf.pdf'
+]
 
 exportZip(fileKeys, s3, bucket)
 .then(archive => {
@@ -81,6 +88,12 @@ aws.config.update({
 const bucket = AWS_S3_BUCKET;
 const s3 = new aws.S3();
 
+const fileKeys = [
+    // Add your file keys here as an array. Example as follows.
+    'test/file1.jpg',
+    'folder1/subfolder1/testpdf.pdf'
+]
+
 const archive = await exportZip(fileKeys, s3, bucket)
 // Then can handle the archive.
 ```
@@ -101,6 +114,12 @@ aws.config.update({
 
 const bucket = AWS_S3_BUCKET;
 const s3 = new aws.S3();
+
+const fileKeys = [
+    // Add your file keys here as an array. Example as follows.
+    'test/file1.jpg',
+    'folder1/subfolder1/testpdf.pdf'
+]
 
 app.get('/', (req, res) => {
   exportZip(fileKeys, s3, bucket)
@@ -131,6 +150,12 @@ aws.config.update({
 
 const bucket = AWS_S3_BUCKET;
 const s3 = new aws.S3();
+
+const fileKeys = [
+    // Add your file keys here as an array. Example as follows.
+    'test/file1.jpg',
+    'folder1/subfolder1/testpdf.pdf'
+]
 
 const output = fs.createWriteStream(join(__dirname, 'export.zip'))
 
