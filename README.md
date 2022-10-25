@@ -2,7 +2,7 @@
 
 
 
-[![npm version][npm-badge]][npm-url]\
+[![npm version][npm-badge]][npm-url]
 
 Download selected files from an Amazon S3 bucket as a zip file.
 
